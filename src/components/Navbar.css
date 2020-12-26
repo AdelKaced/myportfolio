@@ -1,0 +1,37 @@
+.navbar {
+    width: 60%;
+      
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navbar ul li {
+    padding: 20px;
+    list-style: none;
+    width: 100px;
+    text-align :center;
+  }
+
+  .active {
+    color: white;
+    background-color: black;
+  }
+
+  .navbar li:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.6s linear;
+  }
+  
+  .hidde {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+    transition: all 2s ;
+  }
+  
