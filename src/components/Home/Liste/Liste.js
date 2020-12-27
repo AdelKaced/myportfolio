@@ -3,42 +3,37 @@ import Biographie from './Biographie';
 import CV from './CV';
 import Blog from './Blog';
 
-import './Navbar.css'
+import './Liste.css';
 
 let list = ['Biographie', 'CV', 'Blog'];
 
 class Liste extends Component {
   state = {
-    Biographie: true,
-    CV: false,
-    Blog: false,
-  };
-
-  show = (e) => {
-    list.map(item=> this.setState ({ [item]: false}))   
-    this.setState({ [e.target.id]: true });
+        active: 'Biographie',
   };
 
   render() {
-    console.log((this.state))
-        
+    console.log(this.state);
+
     return (
-      <div className="navbar">
+      <div className="liste">
         <ul className="list">
           {list.map((item) => (
             <li
-              onClick={this.show}
+              onClick={() => this.setState({ active: item })}
               id={item}
-              // className={this.state ? 'active' : ''}
+              className={this.state.active === item ? 'active' : ''}
             >
               {' '}
               {item}
             </li>
           ))}
         </ul>
-        <Biographie info={this.state.Biographie} />
-        <CV info={this.state.CV} />
-        <Blog info={this.state.Blog} />
+          
+        <Biographie info={this.state.active}/>         
+        <CV info={this.state.active} />       
+        <Blog info={this.state.active} /> 
+          
       </div>
     );
   }

@@ -8,16 +8,12 @@
 }
 
 body {
-  background: #fff;
   font-weight: 400;
   font-size: 16px;
   font-family: Raleway, sans-serif;
   background: url('./images/blue.png') no-repeat ;
-  background-size: cover
-  
-  /* color: var(--firstColor);
-  width: auto;
-  height: 100vh; */
+  background-size: cover ;
+  min-height : 100vh 
 }
 
 h2 {
@@ -27,9 +23,10 @@ h2 {
 
 h3 {
   text-align: center;
+  margin : 2em
 }
 .banner {
-  height: 280px;
+  height: 200px;
   background-color: rgb(0, 0, 0) ;
   background-size : 100%;
   color: white;
@@ -42,6 +39,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex:wrap 
 }
 
 .presentation {
@@ -66,4 +64,8 @@ h3 {
 
 .cv {
   background-color: grey;
+}
+
+.rubriques {
+  margin-top : 2em
 }

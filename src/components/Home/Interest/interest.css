@@ -1,0 +1,16 @@
+.interests {
+    margin-top :2em ;
+    
+}
+
+.myinterest {
+    display : flex ;
+    justify-content : space-around ;
+    flex-wrap: wrap;
+}
+
+.formInterest select {
+    background-color: black;
+    color: gold;
+    padding: 1em;
+}

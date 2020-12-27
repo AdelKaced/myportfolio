@@ -1,9 +1,12 @@
 import React from 'react';
 
-function CV({ info }) {
-    console.log(info)
+function CV ({info}) {
+  console.log(info)
+  if (info !== 'CV') {
+    return null;
+  }
   return (
-    <div className={info ? 'cv show' : ' cv hidde'}>
+    <div className="cv">
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

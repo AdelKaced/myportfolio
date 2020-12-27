@@ -5,23 +5,23 @@ import './Projet.css';
 
 function Projet() {
   return (
-    <div>
+    <div className='projets'>
       <h3>Mes realisations </h3>
+            <Link to="/realisations">
       <div className="projet">
         <div className="projet-list" id="first">
           <h4> Les jeux des doubles </h4>
-          <Link to="/img">
             {' '}
             <div>
               <img src="cartedoubles.jpeg" alt="adel" className="photo" />
             </div>
-          </Link>
         </div>
         <div className="projet-list" id="second">
           <h4> MarketPlace </h4>
           <img src="Marketplace.jpg" alt="adel" className="photo" />
         </div>
       </div>
+          </Link>
     </div>
   );
 }

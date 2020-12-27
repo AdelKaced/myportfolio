@@ -1,24 +1,20 @@
-import Liste from './components/Liste';
-import Presentation from './components/Presentation';
-import Projets from './components/Projets'
-import Interests from './components/Interests'
+import Home from './components/Home';
+import Projets from './components/Home/Projets'
 
-// import {Switch , Route} from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
 
-import Banner from './components/Banner'
-
-import './App.css';
+import Banner from './components/Banner';
+import Interests from './components/Home/Interest/Interests';
 
 function App() {
   return (
     <div className="App">
-      <Banner />     
-      <div className="rubriques">
-        <Presentation />
-        <Liste />
-      </div>
-      <Projets />
-      <Interests />
+      <Banner />
+      <Switch>
+        <Route exact path='/'  component={Home} />
+        <Route exact path='/realisations'  component={Projets} /> 
+        <Route exact path='/interest'  component={Interests} />        
+      </Switch>
     </div>
   );
 }

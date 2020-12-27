@@ -1,0 +1,26 @@
+
+.banniere {    
+    /* background-color : gold; */
+    display :flex ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em ;
+    
+}
+
+.topic {
+    background-color : grey ;   
+
+}
+
+.banniere img {
+ 
+   width :200px ;
+   height : 200px
+}
+
+.banniere-logo {
+    font-size: 3em;
+   margin-right :0.5em
+}
+
