@@ -25,6 +25,12 @@ h3 {
   text-align: center;
   margin : 2em
 }
+
+.home {
+  margin: 5em;
+  padding: 2em 
+}
+
 .banner {
   height: 200px;
   background-color: rgb(0, 0, 0) ;

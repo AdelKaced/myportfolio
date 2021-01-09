@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 
 import './Projet.css';
 
-function Projet() {
+function Projet(props) {
+  console.log(props)
   return (
     <div className='projets'>
       <h3>Mes realisations </h3>
-            <Link to="/realisations">
+            <Link to="/memory">
       <div className="projet">
         <div className="projet-list" id="first">
+          
           <h4> Les jeux des doubles </h4>
             {' '}
             <div>

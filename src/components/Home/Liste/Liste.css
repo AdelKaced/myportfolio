@@ -1,31 +1,30 @@
 .liste {
-    width: 60%;
-      
-  }
-  
-  .liste ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin :1em
-  }
-  
-  .liste ul li {
-    padding: 20px;
-    list-style: none;
-    width: 100px;
-    text-align :center;
-  }
+  width: 60%;
+}
 
-  .active {
-    color: white;
-    background-color: black;
-  }
+.liste ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em;
+}
 
-  .liste li:hover {
-    color: white;
-    background-color: black;
-    transition: all 0.6s linear;
-  }
+.liste ul li {
+  padding: 20px;
+  list-style: none;
+  width: 100px;
+  text-align: center;
+}
+
+.active {
+  color: white;
+  background-color: black;
+}
+
+.liste li:hover {
+  color: white;
+  background-color: black;
+  transition: all 0.6s linear;
+}
 /*   
   .hidde {
     display: none;
@@ -36,3 +35,8 @@
     transition: all 2s ;
   }
    */
+
+.biographie p {
+  text-align: justify;
+  line-height: 2em;
+}

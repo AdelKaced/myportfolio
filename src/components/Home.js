@@ -3,8 +3,6 @@ import Liste from './Home/Liste/Liste';
 import Projets from './Home/Projets';
 import Interests from './Home/Interest/Interests';
 
-// import {Switch , Route} from 'react-router-dom'
-
 import '../App.css';
 
 function Home() {

@@ -36,7 +36,7 @@ export default function Interests() {
 
   console.log(select)
   return (
-    <div className="interests">
+    <div className="interests"  id="interets">
       <h3> Mes centres d'interêts</h3>
       <form className="formInterest">
         <select value={select} onChange={handleChange}>

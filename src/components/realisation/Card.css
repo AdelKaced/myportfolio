@@ -1,0 +1,30 @@
+/* .card {
+    display :flex ;
+    justify-content: center;
+}
+.card img {
+    border : solid 1px black ;
+    width : 100px ;
+    height: 100px;
+
+} */
+
+.card-img {
+    border : solid 1px black ;
+    width : 100px ;
+    height: 100px;
+
+}
+
+.memory-cards {
+    display : grid ;
+    grid-template-columns: repeat(7, 100px) ;
+    grid-template-rows : repeat(2, 100px) ;
+    grid-gap: 20px
+
+}
+
+.btn-memory {
+margin: 0 auto ;
+width :100px
+}
