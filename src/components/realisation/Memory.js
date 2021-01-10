@@ -32,9 +32,8 @@ const _cartes = cartes;
 function Memory() {
   const [allCards, setAllCards] = useState(cartes.concat(_cartes));
   const [memory, setMemory] = useState([]);
-  // const [reset, setReset] = useState(false);
-  // console.log(reset)
-
+  const [win, setWin] = useState(false);
+  
   useEffect(() => {
     const _array = allCards.slice(0);
     for (let i = 0; i < allCards.length; i++) {
@@ -47,22 +46,29 @@ function Memory() {
   }, []);
 
   const click = (id, index) => {
-    console.log(index);
-    if (memory.length === 0 ) {
-      setMemory([{image: id , position: index}]);
+    if (memory.length === 0) {
+      setMemory([{ image: id, position: index }]);
     }
     if (memory.length === 1 && memory[0].position !== index) {
-      
-        setMemory([...memory, {image: id , position: index}])
-      }
-    // if (memory.length >1 && memory[0].image === memory[1].image) 
-    // {
-    //   console.log('bravo tu as gagné')
-    // }
+      setMemory([...memory, { image: id, position: index }]);
+    }
+    if (memory.length === 2 && memory[0].image !== memory[1].image)
+    {
+      setMemory([]);
+      setMemory([{image: id , position: index}]);
 
+    }
   };
 
-  console.log(memory);
+  useEffect(() => {
+    if (memory.length === 2) {
+      if (memory[0].image === memory[1].image) {
+        setWin(true);
+      } 
+    }
+  }, [memory]);
+
+  console.log(memory)
 
   return (
     <div className="memory">
@@ -70,19 +76,20 @@ function Memory() {
       <div className="memory-cards">
         {allCards.map((carte, index) => (
           <Card
-            front={carte.picture}
+            front={carte.picture }
             click={click}
             index={index}
             length={memory.length}
+            win ={win}
+
           />
         ))}
-        {/* {memory.image[0] === memory.image[1] && memory.image[0] !== undefined ? (
-          <p> bravo tu as gagné </p>
-        ) : (
+        {win && (
           <div className="btn-memory">
+          <p> bravo tu as gagné </p>
             <button>Recommencer</button>
           </div>
-        )} */}
+        )}
       </div>
     </div>
   );
