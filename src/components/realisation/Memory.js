@@ -36,14 +36,16 @@ function Memory() {
   
   useEffect(() => {
     const _array = allCards.slice(0);
-    for (let i = 0; i < allCards.length; i++) {
+    for (let i = 0; i < _array.length; i++) {
       let randomIndex = Math.floor(Math.random() * (i + 1));
       let temp = _array[i];
       _array[i] = _array[randomIndex];
       _array[randomIndex] = temp;
     }
     setAllCards(_array);
+    // eslint-disable-next-line
   }, []);
+  
 
   const click = (id, index) => {
     if (memory.length === 0) {
@@ -68,6 +70,9 @@ function Memory() {
     }
   }, [memory]);
 
+  const refreshPage = ()=>{
+    window.location.reload();
+ }
   console.log(memory)
 
   return (
@@ -83,14 +88,14 @@ function Memory() {
             win ={win}
 
           />
-        ))}
+          ))}
+          </div>
         {win && (
           <div className="btn-memory">
           <p> bravo tu as gagné </p>
-            <button>Recommencer</button>
+            <button onClick={refreshPage}>Recommencer</button>
           </div>
         )}
-      </div>
     </div>
   );
 }

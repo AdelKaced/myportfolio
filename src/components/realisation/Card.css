@@ -20,11 +20,16 @@
     display : grid ;
     grid-template-columns: repeat(7, 100px) ;
     grid-template-rows : repeat(2, 100px) ;
-    grid-gap: 20px
-
-}
+    grid-gap: 20px;
+    justify-content: center;
+    margin-bottom: 2em;
+ }
 
 .btn-memory {
 margin: 0 auto ;
 width :100px
+}
+
+.memory{
+    text-align:  center;
 }
