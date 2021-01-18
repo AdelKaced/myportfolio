@@ -1,36 +1,46 @@
 import React from 'react';
+import { GrUserManager, GrHome } from 'react-icons/gr';
+import { ImMobile } from 'react-icons/im';
+import { SiGmail } from 'react-icons/si';
+
+import './Projet.css'
 
 function Presentation() {
   return (
     <div className="presentation">
-      <h3>Qui suis je ?</h3>
       <div className="picture">
         <img src="maPhoto.jpg" alt="adel" className="maphoto" />
       </div>
       <div className="tableau">
         <table width="100%">
-          <tr>
-            <td>Nom </td>
-            <td>Adel Kaced </td>
+          <tr >
+            <td colpan="2"  >Adel Kaced </td>
+            <td ></td>
           </tr>
           <tr>
-            <td>Age</td>
+            <td>
+              <GrUserManager />
+            </td>
             <td>35 ans </td>
           </tr>
           <tr>
-            <td>Lieu </td>
+            <td>
+              <GrHome />
+            </td>
             <td>Cergy 95800</td>
           </tr>
           <tr>
-            <td>Mobile</td>
+            <td>
+              <ImMobile />
+            </td>
             <td>06 52 54 36 21</td>
           </tr>
           <tr>
-            <td>Email</td>
+            <td>
+              <SiGmail />
+            </td>
             <td>adel.kaced@gmail.com</td>
           </tr>
-          <td>passions</td>
-          <td>Mediation , finance , sport </td>
         </table>
       </div>
     </div>

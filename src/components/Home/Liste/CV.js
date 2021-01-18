@@ -7,13 +7,14 @@ function CV ({info}) {
   }
   return (
     <div className="cv">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum."
+     Après 8 années dans le domaine de la logistique, j'ai décidé d'entamer
+          un tournant dans ma carrière. Curieux des nouvelles technologies et
+          attiré par l'aspect technique et créatif, je me suis naturellement
+          dirigé vers le métier de développeur web. Au cours de ma formation à
+          la Wild Code School, je me suis familiarisé avec les langages
+          indispensables (HTML , CSS, JAVASCRIPT ) et me suis également
+          spécialisé en ReactJS sur la partie front et en Express JS pour le
+          back.  
     </div>
   );
 }

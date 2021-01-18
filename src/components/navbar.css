@@ -5,7 +5,7 @@
 }
 
 .menu {
-  background-color: rgb(196, 194, 194);
+  background-color: rgb(255, 255, 255);
   height: 100vh;
   width: 300%;
   overflow: hidden;
@@ -24,7 +24,19 @@
 .menu li {
   margin: 1em;
   list-style: none;
+  text-decoration: none;
 }
+
+.menu a {
+text-decoration: none;
+ color:black
+}
+
+.menu li:hover {
+  background-color : black ;
+  color: white
+}
+
 
 @media screen and (min-width: 768px) {
     .navbar {

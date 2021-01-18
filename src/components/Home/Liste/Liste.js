@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Biographie from './Biographie';
 import CV from './CV';
-import Blog from './Blog';
+// import Blog from './Blog';
 
 import './Liste.css';
 
-let list = ['Biographie', 'CV', 'Blog'];
+let list = ['Biographie', 'CV'];
 
 class Liste extends Component {
   state = {
@@ -32,7 +32,7 @@ class Liste extends Component {
           
         <Biographie info={this.state.active}/>         
         <CV info={this.state.active} />       
-        <Blog info={this.state.active} /> 
+        {/* <Blog info={this.state.active} />  */}
           
       </div>
     );

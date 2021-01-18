@@ -57,11 +57,14 @@ h3 {
 }
 
 .maphoto {
-  width: 50%;
+  width: 30%;
 }
 
 .picture {
   text-align: center;
+}
+.picture img {
+  border-radius :2em 
 }
 
 .blog {
@@ -74,4 +77,8 @@ h3 {
 
 .rubriques {
   margin-top : 2em
+}
+
+.name {
+  text-align: center;
 }
