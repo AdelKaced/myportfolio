@@ -1,5 +1,9 @@
-.liste {
+/* .liste {
   width: 60%;
+} */
+
+.biographie p, .cv p {
+width : 600px
 }
 
 .liste ul {

@@ -3,7 +3,7 @@ import { GrUserManager, GrHome } from 'react-icons/gr';
 import { ImMobile } from 'react-icons/im';
 import { SiGmail } from 'react-icons/si';
 
-import './Projet.css'
+import './Projet.css';
 
 function Presentation() {
   return (
@@ -11,37 +11,27 @@ function Presentation() {
       <div className="picture">
         <img src="maPhoto.jpg" alt="adel" className="maphoto" />
       </div>
-      <div className="tableau">
-        <table width="100%">
-          <tr >
-            <td colpan="2"  >Adel Kaced </td>
-            <td ></td>
-          </tr>
-          <tr>
-            <td>
-              <GrUserManager />
-            </td>
-            <td>35 ans </td>
-          </tr>
-          <tr>
-            <td>
-              <GrHome />
-            </td>
-            <td>Cergy 95800</td>
-          </tr>
-          <tr>
-            <td>
-              <ImMobile />
-            </td>
-            <td>06 52 54 36 21</td>
-          </tr>
-          <tr>
-            <td>
-              <SiGmail />
-            </td>
-            <td>adel.kaced@gmail.com</td>
-          </tr>
-        </table>
+      <div className="my-info">
+        <div className="my-info-details">
+        <div><GrUserManager /></div>
+        <div className="name">Adel Kaced </div>
+        </div>
+        <div className="my-info-details">
+        <div><GrUserManager /></div>
+          <div>35 ans </div>
+        </div>
+        <div className="my-info-details">
+        <div><GrHome /></div>
+          <div>Cergy 95800</div>
+        </div>
+        <div className="my-info-details">
+        <div><ImMobile /></div>
+          <div>06 52 54 36 21</div>
+        </div>
+        <div className="my-info-details">
+        <div><SiGmail /></div>
+          <div>adel.kaced@gmail.com</div>
+        </div>
       </div>
     </div>
   );

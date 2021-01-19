@@ -1,7 +1,6 @@
 .projets {
   margin-top: 2em;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
+  /* background-color: rgba(0, 0, 0, 0.3); */
   padding :3em
 }
 
@@ -11,6 +10,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .projet img {
@@ -23,3 +23,21 @@
   width: 300px;  
 }
 
+.name{
+  text-align: center;
+}
+
+.my-info{
+  display : flex ;
+  flex-direction : column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.my-info-details {
+  display :flex  ;
+  justify-content : flex-start ;
+  width : 100% ;
+}
+.my-info-details div {
+margin-right: 2em;
+}
