@@ -1,9 +1,10 @@
-/* .liste {
-  width: 60%;
-} */
+.liste {
+  flex:2
+}
 
 .biographie p, .cv p {
-width : 600px
+/* max-width : 600px; */
+text-align: justify
 }
 
 .liste ul {
