@@ -59,18 +59,14 @@ h3 {
 }
 
 .maphoto {
-  width: 200px;
-  height :200px
+  width: 40%;
+
 }
 
 .picture {
   text-align: center;
   margin-bottom: 1em;
 }
-.picture img {
-  border-radius :6em 
-}
-
 .blog {
   background-color: pink;
 }

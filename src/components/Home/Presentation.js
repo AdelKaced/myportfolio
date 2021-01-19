@@ -2,6 +2,7 @@ import React from 'react';
 import { GrUserManager, GrHome } from 'react-icons/gr';
 import { ImMobile } from 'react-icons/im';
 import { SiGmail } from 'react-icons/si';
+import { FaBabyCarriage } from 'react-icons/fa';
 
 import './Projet.css';
 
@@ -13,23 +14,33 @@ function Presentation() {
       </div>
       <div className="my-info">
         <div className="my-info-details">
-        <div><GrUserManager /></div>
-        <div className="name">Adel Kaced </div>
+          <div>
+            <GrUserManager />
+          </div>
+          <div className="name">Adel Kaced </div>
         </div>
         <div className="my-info-details">
-        <div><GrUserManager /></div>
+          <div>
+            <FaBabyCarriage />
+          </div>
           <div>35 ans </div>
         </div>
         <div className="my-info-details">
-        <div><GrHome /></div>
+          <div>
+            <GrHome />
+          </div>
           <div>Cergy 95800</div>
         </div>
         <div className="my-info-details">
-        <div><ImMobile /></div>
+          <div>
+            <ImMobile />
+          </div>
           <div>06 52 54 36 21</div>
         </div>
         <div className="my-info-details">
-        <div><SiGmail /></div>
+          <div>
+            <SiGmail />
+          </div>
           <div>adel.kaced@gmail.com</div>
         </div>
       </div>
