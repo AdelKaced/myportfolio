@@ -1,10 +1,11 @@
 .liste {
-  flex:2
+  flex: 2;
 }
 
-.biographie p, .cv p {
-/* max-width : 600px; */
-text-align: justify
+.biographie p,
+.cv p {
+  /* max-width : 600px; */
+  text-align: justify;
 }
 
 .liste ul {
@@ -30,4 +31,10 @@ text-align: justify
   background-color: black;
   transition: all 0.6s linear;
 }
-
+.cv img {
+  width: 150px;
+  height: auto;
+}
+.cv p {
+  text-align: center;
+}
